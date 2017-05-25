@@ -54,6 +54,25 @@ for x = 1,16 do
 turtle.up()
 end
 end
+local function put()
+turtle.forward()
+turtle.turnRight()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+turtle.up()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+for x = 1,12 do
+turtle.forward()
+end
+turtle.turnLeft()
+turtle.up()
+turtle.forward()
+end
 mushrooms()
 next()
 mushrooms()
@@ -63,3 +82,7 @@ next()
 mushrooms()
 next()
 take()
+put()
+turtle.drop()
+turtle.select(2)
+turtle.drop()
